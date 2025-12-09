@@ -34,11 +34,11 @@
 
 &mt {
     flavor = "balanced";
-}
+};
 
 &lt {
     flavor = "balanced";
-}
+};
 
 / {
 scroll_encoder: scroll_encoder {

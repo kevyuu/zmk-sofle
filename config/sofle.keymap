@@ -53,7 +53,7 @@ scroll_encoder: scroll_encoder {
     conditional_layers {
         compatible = "zmk,conditional-layers";
         adjust_layer {
-            if-layers = <LOWER RAISE>;
+            if-layers = <SYMBOL RAISE>;
             then-layer = <ADJUST>;
         };
     };

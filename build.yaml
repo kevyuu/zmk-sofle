@@ -30,7 +30,10 @@ include:
     #   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     - board: nice_nano@2.0.0
       shield: settings_reset
+      snippet: studio-rpc-usb-uart
     - board: nice_nano@2.0.0
       shield: sofle_left nice_view_adapter nice_view
+      snippet: studio-rpc-usb-uart
     - board: nice_nano@2.0.0
       shield: sofle_right nice_view_adapter nice_view
+      snippet: studio-rpc-usb-uart

@@ -34,10 +34,12 @@
 
 &mt {
     flavor = "balanced";
+    require-prior-idle-ms = <125>;
 };
 
 &lt {
     flavor = "balanced";
+    require-prior-idle-ms = <125>;
 };
 
 / {

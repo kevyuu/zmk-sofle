@@ -70,7 +70,6 @@
                 = <&macro_tap &kp GRAVE &kp GRAVE &kp GRAVE>;
         };
         vim_search: vim_search {
-            compatible = "zmk
             compatible = "zmk,behavior-macro";
             wait-ms = <40>;
             tap-ms = <40>;

@@ -70,10 +70,10 @@
                 = <&macro_tap &kp GRAVE &kp GRAVE &kp GRAVE>;
         };
         vim_search: vim_search {
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
             wait-ms = <40>;
             tap-ms = <40>;
-            #binding-cells = <1>;
             bindings
                 = <&macro_param_1to1>, <&macro_tap &kp FSLH &kp BSLH &kp MACRO_PLACEHOLDER>;
         };

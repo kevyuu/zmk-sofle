@@ -34,7 +34,7 @@
 
 &mt {
     flavor = "balanced";
-    require-prior-idle-ms = <175>;
+    require-prior-idle-ms = <100>;
 };
 
 &lt {
@@ -126,11 +126,11 @@
         default_layer {
             display-name = "default";
             bindings = <
-&kp GRAVE          &kp N1         &kp N2      &kp N3        &kp N4         &kp N5                                 &kp N6     &kp N7        &kp N8           &kp N9         &kp N0           &kp BSPC
-&kp TAB            &kp Q          &kp W       &kp E         &kp R          &kp T                                  &kp Y      &kp U         &kp I            &kp O          &kp P            &studio_unlock
-&vim_search_v      &kp A          &kp S       &kp D         &kp F          &kp G                                  &kp H      &kp J         &kp K            &kp L          &kp SEMI         &kp UNDER
-&vim_search_lsv    &lt ADJUST Z   &mt LGUI X  &mt LALT C    &mt LCTRL V    &kp B       &kp C_MUTE &none           &kp N      &mt RCTRL M   &mt RALT COMMA   &mt RGUI DOT   &lt ADJUST FSLH  &kp DQT
-                                  &kp LGUI    &kp DEL       &kp TAB        &sl SYMBOL  &sk LSHFT  &lt RAISE RET   &kp SPACE  &kp BSPC      &kp RALT  &kp RCTRL
+&kp GRAVE          &kp N1         &kp N2      &kp N3        &kp N4         &kp N5                                   &kp N6     &kp N7        &kp N8           &kp N9         &kp N0           &kp BSPC
+&kp TAB            &kp Q          &kp W       &kp E         &kp R          &kp T                                    &kp Y      &kp U         &kp I            &kp O          &kp P            &studio_unlock
+&vim_search_v      &kp A          &kp S       &kp D         &kp F          &kp G                                    &kp H      &kp J         &kp K            &kp L          &kp SEMI         &kp UNDER
+&vim_search_lsv    &lt ADJUST Z   &mt LGUI X  &mt LALT C    &mt LCTRL V    &kp B       &kp C_VOL_UP &kp C_VOL_DN    &kp N      &mt RCTRL M   &mt RALT COMMA   &mt RGUI DOT   &lt ADJUST FSLH  &kp DQT
+                                  &kp LGUI    &kp DEL       &kp TAB        &sl SYMBOL  &sk LSHFT    &lt RAISE RET   &kp SPACE  &kp BSPC      &kp RALT         &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;

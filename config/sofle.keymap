@@ -43,25 +43,6 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <31 32>;
-            bindings = <&kp ESC>;
-        };
-        combo_tab {
-            timeout-ms = <50>;
-            key-positions = <27 28>;
-            bindings = <&kp TAB>;
-        };
-        combo_capsword {
-            timeout-ms = <50>;
-            key-positions = <15 16>;
-            bindings = <&caps_word>;
-        };
-    };
-
     macros {
         tri_grv: tri_grv {
             compatible = "zmk,behavior-macro";
@@ -101,7 +82,39 @@
             bindings
                 = <&kp EQUAL &kp GT >;
         };
+        vim_search_curwrd: vim_search_curwrd {
+            compatible = "zmk, behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&kp STAR &kp LS(N)>;
+        };
     };
+
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <31 32>;
+            bindings = <&kp ESC>;
+        };
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            bindings = <&kp TAB>;
+        };
+        combo_capsword {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&caps_word>;
+        };
+        combo_search_curwrd {
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            bindings = <&vim_search_curwrd>;
+        };
+    };
+
 
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
@@ -136,7 +149,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
         };
 
-        lower_layer {
+        symbol_layer {
             display-name = "symbol";
             bindings = <
 &trans    &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                    &kp F6    &kp F7    &kp F8    &kp F9    &kp F10   &kp F11
